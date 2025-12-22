@@ -1,7 +1,7 @@
 # Material for CSCE 581: Trusted Artificial Intelligence (Spring 2026) 
 
 Prof. Biplav Srivastava, AI Institute, University of South Carolina
-Spring 2026, [Course Website](https://sites.google.com/site/biplavsrivastava/teaching/ai-csce-580-fall-2025-intro-to-ai)
+Spring 2026, [Course Website](https://sites.google.com/site/biplavsrivastava/teaching/ai-csce-581-spring-2026-trusted-ai)
 
 
 ## Github of previous and related courses
