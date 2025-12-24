@@ -9,6 +9,12 @@ readings in [Large Language Models (LLMs)](./Readme-LLMs.md) and [AI and NLP](./
 * Tutorial on [Trusting AI by Testing and Rating Third Party Offerings](https://sites.google.com/view/ijcai2020tut-aitrust/home), in conjunction with 29th International Joint Conference on Artificial Intelligence (IJCAI 2020), Biplav Srivastava, Francesca Rossi, Yokohoma, Japan, Jan 2021.
 * NIST Taxonomy and Terminology of [Attacks and Mitigations of Adversarial Machine Learning](https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-2e2025.pdf), March 2025
 
+## Trustworthiness Considerations for AI
+* AI and fact/ news (mis)representation
+  > * [LLM based AI and misrepresenting news](https://www.bbc.com/mediacentre/2025/new-ebu-research-ai-assistants-news-content), 2025. A survey of 22 public service media (PSM) organizations in 18 countries working in 14 languages; professional journalists from participating PSM evaluated more than 3,000 responses from ChatGPT, Copilot, Gemini, and Perplexity against key criteria, including accuracy, sourcing, distinguishing opinion from fact, and providing context.
+* Humans detecting real v/s synthetic content
+  > * [Systematic study on users' ability to differential content type](https://cacm.acm.org/research/as-good-as-a-coin-toss-human-detection-of-ai-generated-content/), CACM, 2025. Finds that digital media characteristics such as authenticity, modality, and subject matter content, as well as observer demographics such as multilinguism and age, affect an individual’s detection capabilities, which is about 51%.
+
 ## Papers
 * Sahil Verma and Julia Rubin. 2018. [Fairness definitions explained](https://fairware.cs.umass.edu/papers/Verma.pdf). In Proceedings of the International Workshop on Software Fairness (FairWare '18). Association for Computing Machinery, New York, NY, USA, 1–7. [**Explains fairness definitions using German-credit data**].
 * Joy Buolamwini, Timnit Gebru. [Gender Shades: Intersectional Accuracy Disparities in Commercial Gender Classification](https://proceedings.mlr.press/v81/buolamwini18a.html). In Sorelle A. Friedler, Christo Wilson, editors, Conference on Fairness, Accountability and Transparency, FAT 2018, 23-24 February 2018, New York, NY, USA. Volume 81 of Proceedings of Machine Learning Research, pages 77-91, PMLR, 2018. [**Discusses bias in AI doing face recognition**]
