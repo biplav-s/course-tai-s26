@@ -14,6 +14,13 @@ readings in [Large Language Models (LLMs)](./Readme-LLMs.md) and [AI and NLP](./
   > * [LLM based AI and misrepresenting news](https://www.bbc.com/mediacentre/2025/new-ebu-research-ai-assistants-news-content), 2025. A survey of 22 public service media (PSM) organizations in 18 countries working in 14 languages; professional journalists from participating PSM evaluated more than 3,000 responses from ChatGPT, Copilot, Gemini, and Perplexity against key criteria, including accuracy, sourcing, distinguishing opinion from fact, and providing context.
 * Humans detecting real v/s synthetic content
   > * [Systematic study on users' ability to differential content type](https://cacm.acm.org/research/as-good-as-a-coin-toss-human-detection-of-ai-generated-content/), CACM, 2025. Finds that digital media characteristics such as authenticity, modality, and subject matter content, as well as observer demographics such as multilinguism and age, affect an individual’s detection capabilities, which is about 51%.
+* Same products, different prices
+  > * [Same Cart, Different Price: Instacart’s Price Experiments Cost Families at Checkout](https://groundworkcollaborative.org/work/instacart/), 2025. Groundwork Collaborative, Consumer Reports, and More Perfect Union conducted an independent experiment involving 437 Instacart shoppers in live tests across four cities in the US.  Finds that three out of every four grocery items to shoppers at multiple prices - __**creating bias, by its standard definition**___.
+  > * _Outcome_: Instacart ends the program (2022-2025), but could run it for nearly three years was a serious regulatory lapse in itself.
+* Image recognition performance variance, by skin color
+  > * Face recognition variance - [Gender Shades: Intersectional Accuracy Disparities in
+Commercial Gender Classificatio)](https://proceedings.mlr.press/v81/buolamwini18a/buolamwini18a.pdf). Showed that AI's face recognition performance varies with skin color and gender (2018). _Outcome_: [Leading AI companies drop face recognition models from strategy](https://mitsloan.mit.edu/ideas-made-to-matter/unmasking-bias-facial-recognition-algorithms), but it continues in various forms.
+  > * Cancer recognition - [Beyond the hype: Navigating bias in AI-driven cancer detection](https://pmc.ncbi.nlm.nih.gov/articles/PMC11546210/), 2024. 
 
 ## Papers
 * Sahil Verma and Julia Rubin. 2018. [Fairness definitions explained](https://fairware.cs.umass.edu/papers/Verma.pdf). In Proceedings of the International Workshop on Software Fairness (FairWare '18). Association for Computing Machinery, New York, NY, USA, 1–7. [**Explains fairness definitions using German-credit data**].
