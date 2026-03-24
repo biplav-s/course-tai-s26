@@ -8,9 +8,11 @@ Spring 2026, [Course Website](https://sites.google.com/site/biplavsrivastava/tea
 1. Fall 2025, CSCE 580 Github - [Introduction to Artificial Intelligence](https://github.com/biplav-s/course-ai-f25), Website - [Course Website](https://sites.google.com/site/biplavsrivastava/teaching/ai-csce-580-fall-2025-intro-to-ai)
 2. Spring 2025, CSCE 581 Github - [Trusted Artificial Intelligence](https://github.com/biplav-s/course-tai-s25), Website - [Course Website](https://sites.google.com/site/biplavsrivastava/teaching/ai-csce-581-spring-2025-trusted-ai)
 3. Fall 2024, CSCE 580 Github - [Introduction to Artificial Intelligence](https://github.com/biplav-s/course-ai-f24), Website - [Course Website](https://sites.google.com/site/biplavsrivastava/teaching/ai-csce-580-fall-2024-intro-to-ai)
-4. Fall 2023, CSCE 581 Github - [Trusted Artificial Intelligence](https://github.com/biplav-s/course-ai-tai-f23); Website - [Course Website](https://sites.google.com/site/biplavsrivastava/teaching/ai-csce-581-fall-2023-trusted-ai)
-5. Fall 2021, CSCE 590, Github - [Trusted AI](https://github.com/biplav-s/course-tai)
-6. Spring 2021, CSCE 590, Github - [Data to Decisions - Intro to AI](https://github.com/biplav-s/course-d2d-ai)
+4. Fall 2024, CSCE 771 [Computer Processing of Natural Languages](https://github.com/biplav-s/course-nl-f24). 
+```A highlight for the course was that students analyzed at least one US state for the voter information they provide using techniques learned in the class. A subset of the students, lead by TA, made it into a research paper covering all the US states.```[Details](https://github.com/ai4society/election-dataset-us/), [Paper](https://arxiv.org/abs/2412.15273)
+5. Fall 2023, CSCE 581 Github - [Trusted Artificial Intelligence](https://github.com/biplav-s/course-ai-tai-f23); Website - [Course Website](https://sites.google.com/site/biplavsrivastava/teaching/ai-csce-581-fall-2023-trusted-ai)
+6. Fall 2021, CSCE 590, Github - [Trusted AI](https://github.com/biplav-s/course-tai)
+7. Spring 2021, CSCE 590, Github - [Data to Decisions - Intro to AI](https://github.com/biplav-s/course-d2d-ai)
 
 # Notable Moments
 ## Select projects that attending students agreed to make public
