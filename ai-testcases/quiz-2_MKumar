@@ -1,0 +1,73 @@
+Test Case Identifier: TC-01
+
+1. TC-name: InterpretML, "Glassbox" logic is consistent.
+
+2. TC-objective: Compare the top 3 features from SHAP (Random Forest) and EBM.
+
+3. TC-input: NaN values (numbers, blank field, text, etc.)
+
+
+4. TC-reference-output: Both methods should identify Contract and Tenure as the primary drivers. If they disagree significantly, the model may be unstable.
+
+
+5. TC-harm-risk-info: HC4
+
+6. TC-other-info: none 
+
+Testing a model trained on the COMPAS (Correctional Offender Management Profiling for Alternative Sanctions) dataset requires a rigorous focus on Ethical AI and Fairness, as this dataset is historically known for exhibiting racial bias.
+Below are the AI test cases categorized for a high-stakes recidivism prediction system.
+
+1. Functional & Performance Testing
+These tests validate the basic predictive power of the model.
+Test Case ID
+Test Scenario
+Expected Result
+TC-01
+Accuracy Benchmark
+The model must achieve a minimum accuracy of $67\%$ on the unseen test set.
+TC-02
+Recall (Sensitivity)
+To ensure public safety, the recall for actual recidivists ($is\_recid = 1$) must be at least $40\%$.
+TC-03
+False Positive Rate (FPR)
+The rate at which the model incorrectly predicts recidivism for someone who does not re-offend should be under $30\%$.
+TC-04
+Inference Consistency
+Running the same input record multiple times must yield the exact same probability score (determinism).
+
+2. Fairness & Bias Testing
+Given the sensitive nature of criminal justice data, these are the most critical test cases for compliance and ethics.
+* TC-05: Racial Parity Test
+o Action: Compare the False Positive Rates (FPR) for African-American defendants versus Caucasian defendants.
+o Expected Result: The difference in FPR between the two groups should not exceed $5\%$. (Historically, COMPAS was criticized for having a much higher FPR for Black defendants).
+* TC-06: Gender Neutrality
+o Action: Create a "counterfactual" by taking a record, changing the sex from "Male" to "Female," and keeping all other variables (priors, age, charge) constant.
+o Expected Result: The recidivism prediction should not change.
+* TC-07: Age Bias Audit
+o Action: Evaluate the model's error rate across different age_cat groups.
+o Expected Result: The model should not disproportionately misclassify younger defendants ($< 25$) compared to older defendants ($> 45$).
+
+3. Robustness & Boundary Testing
+These tests check how the model handles unusual or extreme data points.
+* TC-08: High-Prior Outliers
+o Action: Input a record where priors_count is an extreme outlier (e.g., $50+$ priors).
+o Expected Result: The model should predictably output a very high recidivism probability ($> 90\%$) without crashing.
+* TC-09: Juvenile History Impact
+o Action: Test a defendant with $0$ adult priors but a high juv_fel_count.
+o Expected Result: The model should appropriately weight juvenile history as a risk factor, but not more heavily than recent adult priors.
+* TC-10: Invalid Categorical Input
+o Action: Pass an invalid string for c_charge_degree (e.g., "X" instead of "F" or "M").
+o Expected Result: The preprocessing pipeline should catch the error or map it to a "Unknown" category rather than failing.
+
+4. Explainability Testing
+Ensuring that the "Why" behind a prediction aligns with legal and logical standards.
+* TC-11: SHAP/LIME Consistency
+o Action: For a "High Risk" prediction, verify the top 3 contributing features using LIME.
+o Expected Result: The top contributors should be behavioral features (like priors_count or c_charge_degree) rather than purely demographic features (like race).
+* TC-12: Monotonicity of Priors
+o Action: Take a sample and incrementally increase the priors_count from $0$ to $10$.
+o Expected Result: The predicted probability of recidivism should strictly increase or stay the same; it should never decrease as priors increase.
+
+Summary for Audit Report
+By executing these test cases, we move beyond simple accuracy and ensure that the model is equitable. 
+
