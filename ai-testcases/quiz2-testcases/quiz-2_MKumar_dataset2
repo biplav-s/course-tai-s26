@@ -1,0 +1,92 @@
+Telcom Test Cases
+
+TC-identifier: TC-01
+
+1. TC-name: Boundary limits
+
+2. TC-objective: Only tenure values between 1 and 72 is expected.
+
+3. TC-input: 0, 1, 24, 75
+
+4. TC-reference-output: Only values between 1 to 72 is accepted. Rest are discarded
+
+5. TC-harm-risk-info: HC1
+
+6. TC-other-info: none
+
+
+===  =====  =====
+
+1. TC-identifier: TC-02
+
+2. TC-name: Boundary limits
+
+3. TC-objective: Only tenure values between 1 and 72 is expected.
+
+4. TC-input: 0, 1, 24, 75
+
+5. TC-reference-output: 1to 72 is accepted. Rest are discarded
+
+5. TC-harm-risk-info: HC1
+
+6. TC-other-info: 
+
+
+==. ==. ==
+Test Case Identifier: TC-03
+
+1. TC-name: Numeric data validation
+
+2. TC-objective: To ensure features like age only have numeric values
+
+"""Ensure X contains only numeric data after encoding.""" # This assumes 'data' variable exists from previous cells try: non_numeric = data.select_dtypes(exclude=[np.number]).columns self.assertEqual(len(non_numeric), 0, f"Columns still contain non-numeric data: {non_numeric.tolist()}") except NameError: self.skipTest("Variable 'data' not found. Replace with unknown) 
+
+3. TC-input: blank, text, alphanumeric (twentyfour, -244, “ “, no, etc.)
+
+4. TC-reference-output: unknown
+
+5. TC-harm-risk-info: HC1
+
+7. TC-other-info: none
+
+=== ==== ==== ==== 
+
+Test Case Identifier: TC-04
+
+1. TC-name: NaN values replacement
+
+
+2. TC-objective: Ensure that any NaN values in categorical columns (like remote_work) were successfully replaced with the string 'Unknown'.
+self.assertFalse(data.isnull().any().any(), "There are still missing values in the processed data!")
+
+3. TC-input: NaN values (numbers, blank field, text, etc.)
+
+
+4. TC-reference-output: replaced with ‘Unknown'
+
+
+5. TC-harm-risk-info: HC1
+
+6. TC-other-info: none 
+
+=== ==== ====
+
+Test Case Identifier: TC-05
+
+1. TC-name: InterpretML, "Glassbox" logic is consistent.
+
+2. TC-objective: Compare the top 3 features from SHAP (Random Forest) and EBM.
+
+3. TC-input: NaN values (numbers, blank field, text, etc.)
+
+
+4. TC-reference-output: Both methods should identify Contract and Tenure as the primary drivers. If they disagree significantly, the model may be unstable.
+
+
+5. TC-harm-risk-info: HC4
+
+6. TC-other-info: none 
+
+
+
+
